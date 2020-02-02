@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./reset.css">
   <style>
   body{background-color: #000000; color: #ffffff;}
-  .intro_wrap{display: none; height: 100%; padding: 50px; box-sizing: border-box;; ;}
+  .intro_wrap{height: 100%; padding: 50px; box-sizing: border-box;; ;}
   .intro_txt_area {position: relative; height: 100%; font-family: 'Times New Roman'; }
   .intro_txt_area > div{position: absolute; font-size: 300px;}
   .intro_txt_area .txt_v{
@@ -55,7 +55,7 @@
     100% {transform: rotate(90deg)}
   }
 
-  .cmd_wrap{}
+  .cmd_wrap{display: none;}
   .cmd_wrap .cmd_menu ul{display: flex;}
   .cmd_wrap .cmd_menu li{padding: 10px 20px; border-radius: 6px; border: 1px solid #fff;}
   .cmd_wrap .cmd_sec{ font: bold 100% Consolas, Monaco, monospace;}
@@ -69,9 +69,9 @@
     border-right: .05em solid transparent;
     overflow: hidden;
   }
-  .cmd_wrap .cmd_sec li:nth-child(1) .cd{width: 11ch;  animation: typing 1.1s steps(11), caret 1s steps(1) backwards; }
-  .cmd_wrap .cmd_sec li:nth-child(2) .cd{width: 39ch; opacity: 0; animation: typing 3.9s steps(39) 1.2s 1 normal forwards, caret 6.1s steps(39) backwards;}
-  .cmd_wrap .cmd_sec li:nth-child(3) .cd{width: 30ch; opacity: 0; animation: typing 3s steps(30) 5.1s 1 normal forwards, caret 1s steps(30) infinite;}
+  .cmd_wrap .cmd_sec li:nth-child(1) .cd{width: 11ch;  opacity: 0; animation: typing 1.1s steps(11) 1s 1 normal forwards, caret 1s steps(1) backwards; }
+  .cmd_wrap .cmd_sec li:nth-child(2) .cd{width: 39ch; opacity: 0; animation: typing 3.9s steps(39) 2.2s 1 normal forwards, caret 6.1s steps(39) backwards;}
+  .cmd_wrap .cmd_sec li:nth-child(3) .cd{width: 30ch; opacity: 0; animation: typing 3s steps(30) 6.1s 1 normal forwards, caret 1s steps(30) infinite;}
 
   @keyframes typing {
     from { width: 0; opacity: 1; }
@@ -123,6 +123,32 @@
       </ul>
     </section>
     <section class="skill_sec">
+      <h1>Skill</h1>     
+      <ul>
+        <li>
+          React&Redux project
+          -npm: splitter library
+          portfolio: Next.js Hooks, Redux saga
+        </li>
+        <li>
+          nodeJs project 
+          Product: once
+          - marketMACH(express, mongoDB, socketIO)
+          portfoliot express, mysql
+        </li>
+        <li>
+          html/css/javascript(ajax)
+          Product: 30 over(CJ4dx, Lotte giants, Korea energy agency...)
+          -markup, animation and data binding
+        </li>
+        <li>
+          java
+          Product: 2th
+          -KTH content manage system(spring, mybatis, jqgrid)
+          -company responsive web site(spring boot, mybatis, thymeleaf)
+        </li>
+      </ul>  
+
 
     </section>
     <section class="portfiolio_sec">
@@ -132,12 +158,22 @@
   <script>
   document.addEventListener("DOMContentLoaded", function(){
     // 오프닝 제거
-    setTimeout(() => {
-      var target = document.querySelector('.intro_wrap');
-      if(target) target.remove();
-    }, 6000);
+    var cmd = document.querySelector('.cmd_wrap');
+    var intro = document.querySelector('.intro_wrap');
+    function removeIntro() {
+      setTimeout(() => {
+        if(intro) intro.remove();
+        cmd.style.display="block"
+  
+      }, 6000);
+    }
 
-    //
+    // 코딩을 위해 인트로 가림
+    // removeIntro();
+    intro.style.display="none";
+    cmd.style.display="block";
+    
+    // 프록시 이벤트
     document.addEventListener("click", function(e){
       switch (e.target.id) {
         case "introduce":
