@@ -18,8 +18,8 @@
       <div class="author">Jongmin Kim</div>
     </div>
   </article>
-  <div class="cmd_wrap">
-    <nav class="cmd_menu">
+  <div class="container">
+    <nav class="top_menu">
       <ul>
         <li id="introduce">#Introduce</li>
         <li id="skill">#Skill</li>
@@ -46,7 +46,7 @@
         </li>
         <li>
           <div class="ch">Study</div>
-          <div class="cd">Canvas, Math, React state management library</div>
+          <div class="cd">Canvas, Math, React state management library and more!</div>
         </li>
       </ul>
     </section>
@@ -54,76 +54,75 @@
       <h1>Skill</h1>     
       <ul>
         <li>
-          React&Redux project
-          -npm: splitter library
-          portfolio: Next.js Hooks, Redux saga
+          <div class="ico_sec ico_react"></div>
+          <div class="txt_sec">
+            <h2>React&Redux project</h2>
+            <dl>
+              <dt>Product: npm</dt>
+              <dd>
+                <a href="https://www.npmjs.com/package/react-simple-splitter" target="_blank">splitter library</a><br>
+                (No dependencies)
+              </dd>
+              <dd>Experience: Redux saga, thunk, next.js</dd>
+            </dl>
+          </div>
         </li>
         <li>
-          nodeJs project 
-          Product: once
-          - marketMACH(express, mongoDB, socketIO)
-          portfoliot express, mysql
+          <div class="ico_sec ico_node"></div>
+          <div class="txt_sec">
+            <h2>nodeJs project</h2>
+            <dl>
+              <dt>Product: 1th</dt>
+              <dd>
+                <a href="https://www.marketmach.com/" target="_blank">marketMACH</a><br />
+                (express, mongoDB, socketIO)
+              </dd>
+              <dd>Experience: ejs</dd>
+            </dl>
+          </div>
         </li>
         <li>
-          html/css/javascript(ajax)
-          Product: 30 over(CJ4dx, Lotte giants, Korea energy agency...)
-          -markup, animation and data binding
+          <div class="ico_sec ico_webpub"></div>
+          <div class="txt_sec">
+            <h2>html/css/js project</h2>
+            <dl>
+              <dt>Product: 30 over</dt>
+              <dd>
+                <a href="http://eep.energy.or.kr/" target="_blank">Korea energy agency,</a>
+                <a href="https://www.cj4dx.com/" target="_blank">CJ4dx,</a>
+                <a href="http://ilan.dothome.co.kr/portfolio/17_portfolio/fullpage/fullpage.html" target="_blank">KAMT</a>
+                <a href="https://www.nid.or.kr/" target="_blank">Dementia Center,</a>
+                 and more<br/>
+                (markup, animation and data binding)
+              </dd>
+              <dd>Experience: SCSS, bootstrap</dd>
+            </dl>
+          </div>
         </li>
         <li>
-          java
-          Product: 2th
-          -KTH content manage system(spring, mybatis, jqgrid)
-          -company responsive web site(spring boot, mybatis, thymeleaf)
-        </li>
-        <li>
-          I use library in product development. but don't like that.<br />
-          so I don't use library to make a this website.<br />
-          only used scss and vanilla Js.
+          <div class="ico_sec ico_spring"></div>
+          <div class="txt_sec">
+            <h2>java&spring project</h2>
+            <dl>
+              <dt>Product: 2th</dt>
+              <dd>KTH content manage system<br/>(spring, mybatis, jqgrid)</dd>
+              <dd>company responsive web site<br/>(spring boot, mybatis, thymeleaf)</dd>
+              <dd>Experience: spring project setting</dd>
+            </dl>
+          </div>
         </li>
       </ul>  
-
+      <p>
+        I use library in product development. but don't like that.<br />
+        so I don't use library to make a this website.<br />
+        only used scss and vanilla Js.
+      </p>
 
     </section>
     <section class="portfiolio_sec">
 
     </section>
   </div>
-  <script>
-  document.addEventListener("DOMContentLoaded", function(){
-    // 오프닝 제거
-    var cmd = document.querySelector('.cmd_wrap');
-    var intro = document.querySelector('.intro_wrap');
-    function removeIntro() {
-      setTimeout(() => {
-        if(intro) intro.remove();
-        cmd.style.display="block"
-  
-      }, 6000);
-    }
-
-    // 코딩을 위해 인트로 가림
-    // removeIntro();
-    intro.style.display="none";
-    cmd.style.display="block";
-    
-    // 프록시 이벤트
-    document.addEventListener("click", function(e){
-      switch (e.target.id) {
-        case "introduce":
-          document.querySelector('.cmd_sec').style.display="block";
-          break;
-        case "skill":
-          document.querySelector('.cmd_sec').style.display="none";
-          break;
-        case "portfiolio":
-          
-          break;
-      
-        default:
-          break;
-      }
-    });
-  });
-  </script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
