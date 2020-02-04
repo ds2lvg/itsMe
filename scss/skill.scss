@@ -1,0 +1,28 @@
+.skill_sec{
+  background: #eee;
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    li{
+      width: 25%;
+      margin-bottom: 10px;
+      .ico_react{
+        background: url(../img/ico_react.png) 50% 50% no-repeat;
+      }
+      .ico_node{
+        background: url(../img/ico_node.png) 50% 50% no-repeat;
+      }
+      .ico_webpub{
+        background: url(../img/ico_webpub.png) 50% 50% no-repeat;
+      }
+      .ico_spring{
+        background: url(../img/ico_spring.png) 50% 50% no-repeat;
+      }
+      .ico_sec{
+        margin-bottom: 20px;
+        height: 100px;
+        background-size: contain;
+      }
+    }
+  }
+}
