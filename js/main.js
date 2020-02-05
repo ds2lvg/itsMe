@@ -1,32 +1,41 @@
 document.addEventListener("DOMContentLoaded", function(){
   // 오프닝 제거
-  var cmd = document.querySelector('.container');
+  var container = document.querySelector('.container');
   var intro = document.querySelector('.intro_wrap');
+  
+  function toggleSection(target) {
+    var introduce_sec = document.querySelector('.introduce_sec');
+    var skill_sec = document.querySelector('.skill_sec');
+    var portfiolio_sec = document.querySelector('.portfiolio_sec');
+    var arr_sec = [introduce_sec, skill_sec, portfiolio_sec];
+    arr_sec.forEach(function(v,i){
+      v.style.display="none";
+    });
+    document.querySelector("."+target+"_sec").style.display="block";
+  }
+  
   function removeIntro() {
     setTimeout(() => {
       if(intro) intro.remove();
-      cmd.style.display="block"
+      container.style.display="block"
     }, 6000);
   }
 
   // 코딩을 위해 인트로 가림
   // removeIntro();
   intro.style.display="none";
-  cmd.style.display="block";
+  container.style.display="block";
   
+  toggleSection("introduce");
+
   // 프록시 이벤트
   document.addEventListener("click", function(e){
     switch (e.target.id) {
       case "introduce":
-        document.querySelector('.cmd_sec').style.display="block";
-        break;
       case "skill":
-        document.querySelector('.cmd_sec').style.display="none";
-        break;
       case "portfiolio":
-        
+        toggleSection(e.target.id);
         break;
-    
       default:
         break;
     }

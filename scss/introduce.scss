@@ -14,7 +14,7 @@
 		box-sizing: border-box;
 		padding-left: 40px;
 	}
-	display: none;
+
 	position: relative;
 	background-color: #000000;
 	color: #ffffff;
@@ -48,14 +48,14 @@ $leng_names:11;
 $leng_inter:39;
 $leng_hobby:30;
 $leng_study:54;
-$sec_names:$leng_names/10;
-$sec_inter:$leng_names/10+$leng_inter/10;
-$sec_hobby:$leng_names/10+$leng_inter/10+$leng_hobby/10;
-$sec_study:$leng_names/10+$leng_inter/10+$leng_hobby/10+$leng_study/10;
+$sec_names:$leng_names/15;
+$sec_inter:$sec_names+$leng_inter/15;
+$sec_hobby:$sec_inter+$leng_hobby/15;
+$sec_study:$sec_hobby+$leng_study/15;
 
 @mixin fnTyping($leng, $delay, $c_delay, $repeat:backwards) {
 	width: $leng+ch;
-	animation:typing $leng/10+s steps($leng) $delay+1.1+s 1 normal forwards, caret if($repeat==infinite,	1s,	1.1+$c_delay+s) steps(1) $repeat;
+	animation:typing $leng/15+s steps($leng) $delay+1.1+s 1 normal forwards, caret if($repeat==infinite,	1s,	1.1+$c_delay+s) steps(1) $repeat;
 }
 .container{
 	.cmd_sec {
