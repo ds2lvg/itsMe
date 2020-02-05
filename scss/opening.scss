@@ -9,7 +9,7 @@
 }
 .intro_wrap {
 	height: 100%;
-	padding: 50px;
+	padding: 4em;
 	box-sizing: border-box;
 	background-color: #000000;
 }
@@ -20,7 +20,8 @@
 }
 .intro_txt_area > div {
 	position: absolute;
-	font-size: 300px;
+	// font-size: 300px;
+	font-size: 20em;
 	color: #ffffff;
 }
 .intro_txt_area .txt_v {
@@ -59,7 +60,7 @@
 	right: 0;
 	bottom: 0;
 	color: #fff;
-	font-size: 60px;
+	font-size: 4em;
 }
 
 @keyframes light_on0 {
@@ -121,3 +122,13 @@
 		transform: rotate(90deg)
 	}
 }
+
+@media screen and (max-width: 420px) { 
+	.intro_wrap {
+		font-size: 7px;
+	}
+	.intro_txt_area .eni{left: 80px;}
+	.intro_txt_area .ini{top: 85px; left: 60px;}
+	.intro_txt_area .ici{top: 115px; left:-20px;}
+}
+
