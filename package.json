@@ -1,0 +1,24 @@
+{
+  "name": "itsme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/index.scss dist/main.css --output-style compressed",
+    "live": "live-server --port=4567 --browser=chrome",
+    "dev" : "concurrently --kill-others \"npm run live\" \"npm run sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ds2lvg/itsMe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ds2lvg/itsMe/issues"
+  },
+  "homepage": "https://github.com/ds2lvg/itsMe#readme",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  }
+}
