@@ -1,7 +1,17 @@
+@font-face {
+	font-family: 'Autograf-PERSONAL-USE-ONLY';
+	src:url('../font/Autograf-PERSONAL-USE-ONLY.ttf.woff') format('woff'),
+			url('../font/Autograf-PERSONAL-USE-ONLY.ttf.svg#Autograf-PERSONAL-USE-ONLY') format('svg'),
+			url('../font/Autograf-PERSONAL-USE-ONLY.ttf.eot'),
+			url('../font/Autograf-PERSONAL-USE-ONLY.ttf.eot?#iefix') format('embedded-opentype'); 
+			font-weight: normal;
+			font-style: normal;
+}
 .intro_wrap {
 	height: 100%;
 	padding: 50px;
 	box-sizing: border-box;
+	background-color: #000000;
 }
 .intro_txt_area {
 	position: relative;
@@ -11,6 +21,7 @@
 .intro_txt_area > div {
 	position: absolute;
 	font-size: 300px;
+	color: #ffffff;
 }
 .intro_txt_area .txt_v {
 	animation: rotate_text 3s ease 1s 1 normal forwards;
@@ -42,12 +53,13 @@
 	color: #131313;
 }
 .intro_txt_area .author {
+	font-family: 'Autograf-PERSONAL-USE-ONLY';
 	animation: fadein 2.2s ease 4.4s 1 normal forwards;
 	opacity: 0;
 	right: 0;
 	bottom: 0;
 	color: #fff;
-	font-size: 50px;
+	font-size: 60px;
 }
 
 @keyframes light_on0 {
