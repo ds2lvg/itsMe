@@ -10,46 +10,55 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    align-content: space-around;
     li{
       padding: 10px;
+      margin-bottom: 20px;
       width: 23%;
+      min-width: 200px;
       box-sizing: border-box;
       box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
       border-radius: 3px;
-      &:nth-child(1){
+      &.react{
         background-color: #3EC6C6;
+        .ico_sec{
+          background-image: url(../img/ico_react.png);
+        }
       }
-      &:nth-child(2){
+      &.node{
         background-color: #B8DE6F;
+        .ico_sec{
+          background-image: url(../img/ico_node.png);
+        }
       }
-      &:nth-child(3){
+      &.webpub{
         background-color: #ffc107;
+        .ico_sec{
+          background-image: url(../img/ico_webpub.png);
+        }
       }
-      &:nth-child(4){
+      &.spring{
         background-color: #4caf50;
+        .ico_sec{
+          background-image: url(../img/ico_spring.png);
+        }
       }
-      .ico_react{
-        background: url(../img/ico_react.png) 50% 50% no-repeat;
-      }
-      .ico_node{
-        background: url(../img/ico_node.png) 50% 50% no-repeat;
-      }
-      .ico_webpub{
-        background: url(../img/ico_webpub.png) 50% 50% no-repeat;
-      }
-      .ico_spring{
-        background: url(../img/ico_spring.png) 50% 50% no-repeat;
+      &:hover .ico_sec {
+        transform: scale(1.04);
+        transition: all 0.2s;
       }
       div.ico_sec{
         margin-bottom: 20px;
         height: 100px;
         background-size: contain;
         background-color: #ffffff;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
         border-radius: 6px;
       }
       .txt_sec{
         padding: 20px 15px;
-        min-height: 180px;
+        min-height: 280px;
         background-color: rgba(255, 255, 255, 0.875);
         border-radius: 3px;
         dt{
@@ -60,11 +69,14 @@
         }
         dd{
           margin-bottom: 8px;
+          line-height: 1.4;
         }
       }
     }
   }
+
   ul.etc{
+    // 위의 ul 스타일 상속
     @extend .web;
     li{
       .ico_linux{
@@ -73,14 +85,19 @@
       .ico_git{
         background: url(../img/ico_git.png) 50% 50% no-repeat;
       }
-      &:nth-child(1){
+      &.linux{
         background-color: #FFE500;
       }
-      &:nth-child(2){
+      &.git{
         background-color: #ff5722;
       }
-      &:nth-child(3){
+      &.code_style{
         background-color: #27527D;
+        .ico_sec{
+          line-height: 100px;
+          text-align: center;
+          font-size: 50px;
+        }
       }
       &:nth-child(4){
         background-color: transparent;
