@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   // 코딩을 위해 인트로 가림
-  removeIntro();
-  // intro.style.display="none";
-  // cmd.style.display="block";
+  // removeIntro();
+  intro.style.display="none";
+  cmd.style.display="block";
   
   // 프록시 이벤트
   document.addEventListener("click", function(e){

@@ -1,0 +1,26 @@
+.container {
+	display: none;
+	max-width: 1200px;
+	margin: auto;
+	.top_menu {
+		margin: 30px 0 50px 0;
+		ul {
+			display: flex;
+			li {
+				margin-right: 20px;
+				padding: 10px 20px;
+				border-radius: 6px;
+				border: 1px solid #fff;
+				cursor: pointer;
+			}
+		}
+	}
+	.footer {
+		position: relative;
+		text-align: right;
+		p{
+			text-align: center;
+		}
+		.go_top{}
+	}
+}

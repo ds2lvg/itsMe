@@ -1,12 +1,33 @@
 .skill_sec{
-  background: #eee;
-  ul{
+  padding: 50px;
+  background: rgba(238, 238, 238, 0.75);
+  h2{
+    margin: 60px 0 20px 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  ul.web{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     li{
       padding: 10px;
-      width: 25%;
+      width: 23%;
       box-sizing: border-box;
+      box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+      border-radius: 3px;
+      &:nth-child(1){
+        background-color: #3EC6C6;
+      }
+      &:nth-child(2){
+        background-color: #B8DE6F;
+      }
+      &:nth-child(3){
+        background-color: #ffc107;
+      }
+      &:nth-child(4){
+        background-color: #4caf50;
+      }
       .ico_react{
         background: url(../img/ico_react.png) 50% 50% no-repeat;
       }
@@ -19,15 +40,51 @@
       .ico_spring{
         background: url(../img/ico_spring.png) 50% 50% no-repeat;
       }
-      .ico_sec{
+      div.ico_sec{
         margin-bottom: 20px;
         height: 100px;
         background-size: contain;
+        background-color: #ffffff;
+        border-radius: 6px;
       }
       .txt_sec{
         padding: 20px 15px;
         min-height: 180px;
-        background-color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.875);
+        border-radius: 3px;
+        dt{
+          margin-bottom: 15px; 
+          font-size: 22px; 
+          font-weight: 600;
+          font-family: 'Open Sans', sans-serif;
+        }
+        dd{
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+  ul.etc{
+    @extend .web;
+    li{
+      .ico_linux{
+        background: url(../img/ico_linux.png) 50% 50% no-repeat;
+      }
+      .ico_git{
+        background: url(../img/ico_git.png) 50% 50% no-repeat;
+      }
+      &:nth-child(1){
+        background-color: #FFE500;
+      }
+      &:nth-child(2){
+        background-color: #ff5722;
+      }
+      &:nth-child(3){
+        background-color: #27527D;
+      }
+      &:nth-child(4){
+        background-color: transparent;
+        visibility: hidden;
       }
     }
   }
