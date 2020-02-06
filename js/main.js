@@ -22,9 +22,9 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   // 코딩을 위해 인트로 가림
-  // removeIntro();
-  intro.style.display="none";
-  container.style.display="block";
+  removeIntro();
+  // intro.style.display="none";
+  // container.style.display="block";
   
   toggleSection("introduce");
 
