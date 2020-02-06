@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   
   function removeIntro() {
-    setTimeout(() => {
-      if(intro) intro.remove();
+    setTimeout(function() {
+      if(intro) intro.parentNode.removeChild(intro);
       container.style.display="block"
     }, 6000);
   }

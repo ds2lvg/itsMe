@@ -280,6 +280,10 @@ a {
   100% {
     border-right-color: transparent; } }
 
+@media screen and (max-width: 420px) {
+  .cmd_sec {
+    padding: 25px 15px; } }
+
 .skill_sec {
   padding: 50px;
   background: rgba(238, 238, 238, 0.75); }
@@ -384,6 +388,10 @@ a {
     background-color: transparent;
     visibility: hidden; }
 
+@media screen and (max-width: 420px) {
+  .skill_sec ul.web li .txt_sec, .skill_sec ul.etc li .txt_sec {
+    min-height: auto; } }
+
 .portfiolio_sec .flat_box {
   display: flex;
   flex-wrap: wrap;
@@ -437,6 +445,10 @@ a {
         display: inline-block;
         padding-top: 75px;
         line-height: 1.5; }
+
+@media screen and (max-width: 420px) {
+  .portfiolio_sec .flat_box {
+    width: 100%; } }
 
 /*
 font-family: 'Roboto', sans-serif;

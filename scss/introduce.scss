@@ -91,3 +91,9 @@ $sec_study:$sec_hobby+$leng_study/15;
 		border-right-color: transparent;
 	}
 }
+
+@media screen and (max-width: 420px) { 
+	.cmd_sec{
+		padding: 25px 15px;
+	}
+}
