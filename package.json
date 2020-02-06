@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/index.scss dist/main.css --output-style compressed",
+    "sass": "node-sass -w --source-map true --source-map-contents true --precision 6 scss/index.scss dist/main.css --output-style nested",
+    "css-minify": "cleancss --level 1 --format breaksWith=lf --source-map --source-map-inline-sources --output dist/main.min.css dist/main.css",
+    "compile-styles" : "npm run sass && npm run css-minify",
     "live": "live-server --port=4567 --browser=chrome",
-    "dev" : "concurrently --kill-others \"npm run live\" \"npm run sass\""
+    "dev": "concurrently --kill-others \"npm run live\" \"npm run compile-styles\""
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/ds2lvg/itsMe#readme",
   "devDependencies": {
+    "clean-css-cli": "^4.3.0",
     "concurrently": "^5.1.0"
   }
 }

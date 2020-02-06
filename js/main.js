@@ -30,11 +30,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
   // 프록시 이벤트
   document.addEventListener("click", function(e){
+    console.log(e.target.id)
     switch (e.target.id) {
       case "introduce":
       case "skill":
       case "portfiolio":
         toggleSection(e.target.id);
+        break;
+      case "showVTR":
+        document.querySelector('.outer_dim').style.display="block";
+        break;
+      case "VTRIMG":
+        document.querySelector('.outer_dim').style.display="none";
         break;
       default:
         break;

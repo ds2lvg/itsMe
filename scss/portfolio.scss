@@ -1,0 +1,14 @@
+.portfiolio_sec{
+  .flat_box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+    li{
+      width: 50%;
+      height: 200px;
+      box-sizing: border-box;
+      border: 1px solid #000;
+    }
+  }
+}
