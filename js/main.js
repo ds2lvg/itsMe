@@ -4,10 +4,15 @@ document.addEventListener("DOMContentLoaded", function(){
   var intro = document.querySelector('.intro_wrap');
   
   function toggleSection(target) {
-    var introduce_sec = document.querySelector('.introduce_sec');
-    var skill_sec = document.querySelector('.skill_sec');
-    var portfiolio_sec = document.querySelector('.portfiolio_sec');
-    var arr_sec = [introduce_sec, skill_sec, portfiolio_sec];
+    var arr_sec = [
+      document.querySelector('.introduce_sec'),
+      document.querySelector('.skill_sec'),
+      document.querySelector('.portfiolio_sec'),
+    ];
+    document.querySelectorAll('.top_menu li').forEach(function(v, i){
+      v.classList.remove('on');
+    });
+    document.getElementById(target).classList.add('on');
     arr_sec.forEach(function(v,i){
       v.style.display="none";
     });

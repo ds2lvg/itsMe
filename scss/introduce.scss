@@ -45,9 +45,9 @@
 }
 
 $leng_names:11;
-$leng_inter:39;
+$leng_inter:35;
 $leng_hobby:30;
-$leng_study:54;
+$leng_study:29;
 $sec_names:$leng_names/15;
 $sec_inter:$sec_names+$leng_inter/15;
 $sec_hobby:$sec_inter+$leng_hobby/15;
@@ -95,5 +95,7 @@ $sec_study:$sec_hobby+$leng_study/15;
 @media screen and (max-width: 420px) { 
 	.cmd_sec{
 		padding: 25px 15px;
+		>p{font-size: 12px;}
+		li{font-size: 12px;}
 	}
 }

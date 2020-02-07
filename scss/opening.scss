@@ -25,26 +25,26 @@
 	color: #ffffff;
 }
 .intro_txt_area .txt_v {
-	animation: rotate_text 3s ease 1s 1 normal forwards;
+	animation: rotate_text 3s ease 0.5s 1 normal forwards;
 	top: 0;
 	left: 0;
 	z-index: 10;
 }
 .intro_txt_area .eni {
-	animation: light_on0 3s ease 2.2s 1 normal forwards;
+	animation: light_on0 3s ease 1.7s 1 normal forwards;
 	top: 0;
 	left: 160px;
 	z-index: 3;
 }
 .intro_txt_area .ini {
-	animation: light_on1 3s ease 2.2s 1 normal forwards;
+	animation: light_on1 3s ease 1.7s 1 normal forwards;
 	top: 180px;
 	left: 130px;
 	transform: rotate(45deg);
 	z-index: 2;
 }
 .intro_txt_area .ici {
-	animation: light_on2 3s ease 3.8s 1 normal forwards;
+	animation: light_on2 3s ease 3.3s 1 normal forwards;
 	top: 250px;
 	left: -50px;
 	transform: rotate(90deg);
@@ -55,7 +55,7 @@
 }
 .intro_txt_area .author {
 	font-family: 'Autograf-PERSONAL-USE-ONLY';
-	animation: fadein 2.2s ease 4.4s 1 normal forwards;
+	animation: fadein 2s ease 3.9s 1 normal forwards;
 	opacity: 0;
 	right: 0;
 	bottom: 0;
@@ -100,6 +100,9 @@
 @keyframes fadein {
 	0% {
 		opacity: 0;
+	}
+	70% {
+		opacity: 1;
 	}
 	100% {
 		opacity: 1;

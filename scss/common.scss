@@ -18,7 +18,8 @@
 				font-weight: 600;
 				font-family: 'open sanse', sans-serif;
 				cursor: pointer;
-				&:hover{color: #D3B55D; transition: all 0.15s;}
+				&::before{content: '#';}
+				&.on ,&:hover{color: #D3B55D; transition: all 0.15s;}
 			}
 		}
 	}

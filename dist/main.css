@@ -67,26 +67,26 @@ a {
   color: #ffffff; }
 
 .intro_txt_area .txt_v {
-  animation: rotate_text 3s ease 1s 1 normal forwards;
+  animation: rotate_text 3s ease 0.5s 1 normal forwards;
   top: 0;
   left: 0;
   z-index: 10; }
 
 .intro_txt_area .eni {
-  animation: light_on0 3s ease 2.2s 1 normal forwards;
+  animation: light_on0 3s ease 1.7s 1 normal forwards;
   top: 0;
   left: 160px;
   z-index: 3; }
 
 .intro_txt_area .ini {
-  animation: light_on1 3s ease 2.2s 1 normal forwards;
+  animation: light_on1 3s ease 1.7s 1 normal forwards;
   top: 180px;
   left: 130px;
   transform: rotate(45deg);
   z-index: 2; }
 
 .intro_txt_area .ici {
-  animation: light_on2 3s ease 3.8s 1 normal forwards;
+  animation: light_on2 3s ease 3.3s 1 normal forwards;
   top: 250px;
   left: -50px;
   transform: rotate(90deg);
@@ -97,7 +97,7 @@ a {
 
 .intro_txt_area .author {
   font-family: 'Autograf-PERSONAL-USE-ONLY';
-  animation: fadein 2.2s ease 4.4s 1 normal forwards;
+  animation: fadein 2s ease 3.9s 1 normal forwards;
   opacity: 0;
   right: 0;
   bottom: 0;
@@ -133,6 +133,8 @@ a {
 @keyframes fadein {
   0% {
     opacity: 0; }
+  70% {
+    opacity: 1; }
   100% {
     opacity: 1; } }
 
@@ -179,7 +181,9 @@ a {
         font-weight: 600;
         font-family: 'open sanse', sans-serif;
         cursor: pointer; }
-        .container .top_menu ul li:hover {
+        .container .top_menu ul li::before {
+          content: '#'; }
+        .container .top_menu ul li.on, .container .top_menu ul li:hover {
           color: #D3B55D;
           transition: all 0.15s; }
   .container .code_tag {
@@ -256,16 +260,16 @@ a {
   animation: typing 0.733333s steps(11) 1.1s 1 normal forwards, caret 1.833333s steps(1) backwards; }
 
 .container .cmd_sec li:nth-child(2) .cd {
-  width: 39ch;
-  animation: typing 2.6s steps(39) 1.833333s 1 normal forwards, caret 4.433333s steps(1) backwards; }
+  width: 35ch;
+  animation: typing 2.333333s steps(35) 1.833333s 1 normal forwards, caret 4.166667s steps(1) backwards; }
 
 .container .cmd_sec li:nth-child(3) .cd {
   width: 30ch;
-  animation: typing 2s steps(30) 4.433333s 1 normal forwards, caret 6.433333s steps(1) backwards; }
+  animation: typing 2s steps(30) 4.166667s 1 normal forwards, caret 6.166667s steps(1) backwards; }
 
 .container .cmd_sec li:nth-child(4) .cd {
-  width: 54ch;
-  animation: typing 3.6s steps(54) 6.433333s 1 normal forwards, caret 1s steps(1) infinite; }
+  width: 29ch;
+  animation: typing 1.933333s steps(29) 6.166667s 1 normal forwards, caret 1s steps(1) infinite; }
 
 @keyframes typing {
   from {
@@ -282,7 +286,11 @@ a {
 
 @media screen and (max-width: 420px) {
   .cmd_sec {
-    padding: 25px 15px; } }
+    padding: 25px 15px; }
+    .cmd_sec > p {
+      font-size: 12px; }
+    .cmd_sec li {
+      font-size: 12px; } }
 
 .skill_sec {
   padding: 50px;
