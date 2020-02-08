@@ -33,14 +33,20 @@
         background: linear-gradient(90deg, rgba(81,45,168,1) 0%, rgba(103,58,183,1) 100%);
       }
       &.by_react{
-        &:after{
+        &:before{
           background: url(../img/ico_wh_react.png) 0 0 no-repeat;
           background-size: contain;
         }
       }
       &.by_js{
-        &:after{
+        &:before{
           background: url(../img/ico_js.png) 0 0 no-repeat;
+          background-size: contain;
+        }
+      }
+      &.with_nodejs{
+        &:after{
+          background: url(../img/ico_nodejs.png) 0 0 no-repeat;
           background-size: contain;
         }
       }
@@ -49,19 +55,23 @@
           cursor: not-allowed;
         }
       }
-      &:after{
+      &:before, &:after{
         display: block;
         content: '';
         clear: both;
         position: absolute;
         top: 15px;
-        left: 15px;
         width: 38px;
         height: 38px;
       }
+      &:before{
+        left: 15px;
+      }
+      &:after{
+        left: 58px;
+      }
       a{
         display: block;
-
         height: 100%;
         color: #ffffff;
         font-size: 16px;

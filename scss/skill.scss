@@ -115,7 +115,9 @@
         .ico_sec{
           line-height: 100px;
           text-align: center;
-          font-size: 50px;
+          *{
+            font-size: 40px;
+          }
         }
       }
       &:nth-child(4){

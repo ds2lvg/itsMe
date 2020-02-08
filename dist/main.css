@@ -60,6 +60,13 @@ a {
   position: relative;
   height: 100%;
   font-family: 'Times New Roman'; }
+  .intro_txt_area .btn_skip {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer; }
 
 .intro_txt_area > div {
   position: absolute;
@@ -390,8 +397,9 @@ a {
     background-color: #27527D; }
     .skill_sec ul.etc li.code_style .ico_sec {
       line-height: 100px;
-      text-align: center;
-      font-size: 50px; }
+      text-align: center; }
+      .skill_sec ul.etc li.code_style .ico_sec * {
+        font-size: 40px; }
   .skill_sec ul.etc li:nth-child(4) {
     background-color: transparent;
     visibility: hidden; }
@@ -427,23 +435,29 @@ a {
       background: linear-gradient(90deg, #303f9f 0%, #3f51b5 100%); }
     .portfiolio_sec .flat_box li:nth-child(6) {
       background: linear-gradient(90deg, #512da8 0%, #673ab7 100%); }
-    .portfiolio_sec .flat_box li.by_react:after {
+    .portfiolio_sec .flat_box li.by_react:before {
       background: url(../img/ico_wh_react.png) 0 0 no-repeat;
       background-size: contain; }
-    .portfiolio_sec .flat_box li.by_js:after {
+    .portfiolio_sec .flat_box li.by_js:before {
       background: url(../img/ico_js.png) 0 0 no-repeat;
+      background-size: contain; }
+    .portfiolio_sec .flat_box li.with_nodejs:after {
+      background: url(../img/ico_nodejs.png) 0 0 no-repeat;
       background-size: contain; }
     .portfiolio_sec .flat_box li.no_ready a {
       cursor: not-allowed; }
-    .portfiolio_sec .flat_box li:after {
+    .portfiolio_sec .flat_box li:before, .portfiolio_sec .flat_box li:after {
       display: block;
       content: '';
       clear: both;
       position: absolute;
       top: 15px;
-      left: 15px;
       width: 38px;
       height: 38px; }
+    .portfiolio_sec .flat_box li:before {
+      left: 15px; }
+    .portfiolio_sec .flat_box li:after {
+      left: 58px; }
     .portfiolio_sec .flat_box li a {
       display: block;
       height: 100%;

@@ -1,8 +1,21 @@
 document.addEventListener("DOMContentLoaded", function(){
-  // 오프닝 제거
   var container = document.querySelector('.container');
   var intro = document.querySelector('.intro_wrap');
   
+  // 오프닝 삭제후 본격적인 화면 로딩
+  function actAfterOpening(){
+    if(intro) intro.parentNode.removeChild(intro);
+    container.style.display="block";
+  }
+
+  setTimeout(function() {
+    actAfterOpening();
+  }, 6000);
+
+  // 테스트할때 오프닝 안뜨게 하려고 만들어놓은 소스
+  // intro.style.display="none";
+  // container.style.display="block";
+
   function toggleSection(target) {
     var arr_sec = [
       document.querySelector('.introduce_sec'),
@@ -19,37 +32,24 @@ document.addEventListener("DOMContentLoaded", function(){
     document.querySelector("."+target+"_sec").style.display="block";
   }
   
-  function removeIntro() {
-    setTimeout(function() {
-      if(intro) intro.parentNode.removeChild(intro);
-      container.style.display="block"
-    }, 6000);
-  }
-
-  // 코딩을 위해 인트로 가림
-  removeIntro();
-  // intro.style.display="none";
-  // container.style.display="block";
-  
   toggleSection("introduce");
 
   // 프록시 이벤트
   document.addEventListener("click", function(e){
-    console.log(e.target.id)
+    // console.log(e.target.id)
     switch (e.target.id) {
+      case "skip":
+        return actAfterOpening();
       case "introduce":
       case "skill":
       case "portfiolio":
-        toggleSection(e.target.id);
-        break;
+        return toggleSection(e.target.id);
       case "showVTR":
-        document.querySelector('.outer_dim').style.display="block";
-        break;
+        return document.querySelector('.outer_dim').style.display="block";
       case "VTRIMG":
-        document.querySelector('.outer_dim').style.display="none";
-        break;
+        return document.querySelector('.outer_dim').style.display="none";
       default:
-        break;
+        return;
     }
   });
 });

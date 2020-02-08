@@ -17,6 +17,14 @@
 	position: relative;
 	height: 100%;
 	font-family: 'Times New Roman';
+	.btn_skip{
+		position: absolute;
+		right: 0;
+		background: none; 
+		border: none; 
+		color: #ffffff;
+		cursor: pointer;
+	}
 }
 .intro_txt_area > div {
 	position: absolute;
