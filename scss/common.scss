@@ -67,3 +67,8 @@
 		}
 	}
 }
+
+.mob_show{display: none;}
+@media screen and (max-width: 420px) {
+	.mob_show{display: block;}
+}

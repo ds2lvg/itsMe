@@ -42,7 +42,7 @@
       </ul>
     </nav>
     <section class="introduce_sec">
-      <div class="cmd_sec">
+      <article class="cmd_sec">
         <p>
           JongminSoft Portfolio [Version 1.0.1]<br/>
           (c) 2020 JongminSoft Corporation. All rights reserved.
@@ -58,14 +58,44 @@
           </li>
           <li>
             <div class="ch">Hobby</div>
-            <div class="cd">Reading, Stroll, World History</div>
+            <div class="cd">Reading, Museum, World History</div>
           </li>
           <li>
             <div class="ch">Study</div>
             <div class="cd">Canvas, Math, Redux and more!</div>
           </li>
         </ul>
-      </div>
+      </article>
+      <article class="myinfo_sec">
+
+      </article>
+      <article class="certificate_sec">
+        <h2>Major</h2>
+        <ul class="ul_txt ul_major">
+          <li><em>Fashion design</em>(Bachelor's degree)</li>
+          <li><em>Computer Science</em>(junior, I'm Studyng)</li>
+        </ul>
+        <h2>Academy</h2>
+        <ul class="ul_txt">
+          <li><em>JAVA Web developer</em> / Daily course / KH / 2017.10 - 2018.04</li>
+          <li><em>JAVA/SPRING</em> / Weekend course / hanqea / 2017.12 - 2018.04</li>
+          <li><em>Angular2</em> / Weekend course / TheJouen / 2017.09 - 2017.11</li>
+          <li><em>PHP</em> / Weekend course / GreenArt /<br class="mob_show"/> 2016.09 - 2016.11</li>
+          <li><em>UI/UX develope</em> / Daily course / TheJouen / 2015.08 - 2015.12</li>
+        </ul>        
+        <h2>Certificate</h2>
+        <ul class="ul_certificate">
+          <li>
+            <img src="./img/certificate_wac.png" alt="">
+          </li>
+          <li>
+            <img src="./img/certificate_lotte.png" alt="">
+          </li>
+          <li>
+            <img src="./img/certificate_ydp.png" alt="">
+          </li>
+        </ul>
+      </article>
     </section>
     <section class="skill_sec">
       <h2>Web</h2>     
@@ -172,14 +202,11 @@
           </div>
           <div class="txt_sec">
             <dl>
-              <dt>Coding Style</dt>
-              <dd>
-                I use library in product development. but don't like that.<br />
-                so I don't use library to make a this website.<br />
-                only used scss and ES5.<br />
-              </dd>
+              <dt>Coding Life</dt>
               <dd>
                 If you want to know about me, visit my blog.<br />
+              </dd>
+              <dd>
                 <a href="https://likejirak.tistory.com/" target="_blank">Go blog!</a>
               </dd>
             </dl>
@@ -190,12 +217,65 @@
     </section>
     <section class="portfiolio_sec">
       <ul class="flat_box">
-        <li class="by_react"><a href="https://www.npmjs.com/package/react-simple-splitter" target="_blank"><span>NPM<br />Library</span></a></li>
-        <li class="by_react with_nodejs"><a href="https://reactedu.github.io/matching-card/" target="_blank"><span>Card<br />Game</span></a></li>
-        <li class="by_js"><a href="https://github.com/ds2lvg/thebook-noAD" target="_blank"><span>Chrome<br />Extension</span></a></li>
-        <li class="by_js no_ready"><a href="javascript:alert('I\'m making it')" class="noSelect"><span>Canvas<br />for Game</span></a></li>
-        <li class="by_react"><a href="https://ds2lvg.github.io/font-util/" target="_blank"><span>Font<br />Preview</span></a></li>
-        <li class="by_react with_nodejs no_ready"><a href="javascript:alert('I\'m making it')" class="noSelect"><span>IT<br />Book</span></a></li>
+        <li class="by_react">
+          <a href="https://www.npmjs.com/package/react-simple-splitter" target="_blank"><span>NPM<br />Library</span></a>
+          <article class="hover_sec">
+            <h1>Splitter</h1>
+            <p>
+              When I was invlolved in KTH Project, made a splitter library by ES5.<br />
+              I do refactoring by react recently and upload it to npm.
+            </p>         
+          </article>
+        </li>
+        <li class="by_react with_nodejs">
+          <a href="https://reactedu.github.io/matching-card/" target="_blank"><span>Card<br />Game</span></a>
+          <article class="hover_sec">
+            <h1>Matching Game</h1>
+            <p>
+              Click the card and seek a pair of numbers.<br />
+              When finish a game, MY server collect user's record and display a best.<br />
+            </p>         
+          </article>
+        </li>
+        <li class="by_js">
+          <a href="https://github.com/ds2lvg/thebook-noAD" target="_blank"><span>Chrome<br />Extension</span></a>
+          <article class="hover_sec">
+            <h1>Improve thebook UI</h1>
+            <p>
+              It can remove google advertisement of site.
+              and improve UI of the site(https://thebook.io)
+            </p>         
+          </article>
+        </li>
+        <li class="by_js no_ready">
+          <a href="javascript:alert('I\'m making it')" class="noSelect"><span>Canvas<br />for Game</span></a>
+          <article class="hover_sec">
+            <h1>I'm making it.</h1>
+            <p>
+              canvas, ES6
+            </p>         
+          </article>
+        </li>
+        <li class="by_react">
+          <a href="https://ds2lvg.github.io/font-util/" target="_blank"><span>Font<br />Preview</span></a>
+          <article class="hover_sec">
+            <h1>Check font rednering</h1>
+            <p>
+              I made it for web designer by vanilla JS.<br />
+              It can check font rendering on PC or Mobile.
+            </p>         
+          </article>
+        </li>
+        <li class="by_react with_nodejs no_ready">
+          <a href="javascript:alert('I\'m making it')" class="noSelect"><span>IT<br />Book</span></a>
+          <article class="hover_sec">
+            <h1>I'm making it.</h1>
+            <p>
+              Express.js, Sequelize, JWT<br />
+              Next.js, Redux-saga, axios
+            </p>         
+          </article>
+        </li>
       </ul>
     </section>
     <footer class="footer">
