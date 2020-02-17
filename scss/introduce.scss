@@ -102,6 +102,192 @@ $sec_study:$sec_hobby+$leng_study/15;
 	}
 }
 
+.myinfo_sec{
+	h2{ 
+		margin: 60px 0 20px 50px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.df{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.arrow_sec{
+			position: relative;
+			margin: 28px 0;
+			width: 50px;
+			background-image: url(../img/bg_line_grey.png);
+			background-repeat: repeat-y;
+			background-position: 50% 0;
+			&:nth-of-type(2) {
+				height: 220px;
+			}
+			&:nth-of-type(3) {
+				height: 350q;
+			}
+			&:before{
+				display: block;
+				content: '';
+				clear: both;
+				position: absolute;
+				top: 100%;
+				left: -50%;
+				width: 100%;
+				height: 5px;
+				background-image: url(../img/bg_line_grey_hor.png);
+				background-repeat: repeat-x;
+				background-position: 100% 0;
+			}
+			&::after{
+				display: block;
+				content: '';
+				clear: both;
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: 100%;
+				height: 5px;
+				background-image: url(../img/bg_line_grey_hor.png);
+				background-repeat: repeat-x;
+				background-position: 100% 0;
+			}
+		}
+		> ul {
+			position: relative;
+			// width: 25%;
+			&.company_1th{
+
+			}
+			&.company_2th{
+				height: 280px;
+			}
+			&.company_3th{
+				height: 390px;
+			}
+			&.company_4th{
+		
+			}
+			li{
+				position: relative;
+				margin-bottom: 50px;
+				width: 125px;
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				background-image: url(../img/bg_flow_chart.png);
+				background-size: 125px auto;
+				color: #ffffff;
+				font-size: 14px;
+				&.start_end{
+					background-position-y: 0px;
+				}
+				&.preparation{
+					background-position-y: -70px;
+				}
+				&.decision{
+					background-position-y: -140px;
+				}
+				&.process{
+					background-position-y: -210px;
+				}
+				&.document{
+					background-position-y: -280px;
+				}
+				&::after{
+					display: block;
+					content: '';
+					clear: both;
+					position: absolute;
+					bottom: -40px;
+					width: 100%;
+					height: 30px;
+					background: url(../img/flow_chart_arrow.png) 50% 100% no-repeat;
+				}
+				&:last-child{
+					margin-bottom: 0;
+					&:after{
+						display: none;
+					}
+				}
+				a{
+					&.zi-1{
+						position: absolute;
+						z-index: -1;
+					}
+					display: block;
+					color: chocolate;
+				}
+			}
+			.line_2{
+				line-height: initial;
+				div{
+					padding-top: 14px;
+				}
+			}
+			.line_3{
+				line-height: initial;
+				div{
+					padding-top: 5px;
+				}
+			}
+		}
+	}
+	.outer_dim{
+		display: none;
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.9);
+		top: 0;
+		left: 0;
+		text-align: center;
+		z-index: 1;
+		.modal_img{
+			z-index: 2;
+			cursor: pointer;
+			img{
+				display: none;
+				max-width: 100%;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 420px) { 
+	.myinfo_sec{
+		h2{ 
+			margin: 40px 0 20px 0;
+		}
+		.df{
+			display: block;
+			ul{
+				&:last-of-type{
+					li:last-child{
+						&:after{
+							display: none;
+						}
+					}
+				}
+				li:nth-child(n){
+					margin: 0 auto 50px;
+					&:after{
+						display: block;
+					}
+				}
+			}
+			.arrow_sec:nth-child(n){
+				// display: none;
+				width: 100%;
+				height: 1px;
+				background: none;
+				&:before, &:after{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
 .certificate_sec {
 	padding: 50px;
 	padding-top: 100px;

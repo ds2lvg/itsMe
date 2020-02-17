@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   // 프록시 이벤트
   document.addEventListener("click", function(e){
-    // console.log(e.target.id)
+    console.log(e.target.id, e.target.className)
     switch (e.target.id) {
       case "skip":
         return actAfterOpening();
@@ -44,12 +44,28 @@ document.addEventListener("DOMContentLoaded", function(){
       case "skill":
       case "portfiolio":
         return toggleSection(e.target.id);
-      case "showVTR":
-        return document.querySelector('.outer_dim').style.display="block";
       case "VTRIMG":
+        return document.querySelector('.outer_dim').style.display="none";  
+      default:
+        break;
+    }
+    switch (e.target.className) {
+      case "img_vtr":
+      case "img_kth":
+      case "outer_dim":
         return document.querySelector('.outer_dim').style.display="none";
       default:
-        return;
+        break;
     }
   });
 });
+function showVTR() {
+  document.querySelector('.outer_dim').style.display="block";
+  document.querySelector('.outer_dim .img_kth').style.display="none";
+  document.querySelector('.outer_dim .img_vtr').style.display="inline-block";
+}
+function showKTH() {
+  document.querySelector('.outer_dim').style.display="block";
+  document.querySelector('.outer_dim .img_vtr').style.display="none";
+  document.querySelector('.outer_dim .img_kth').style.display="inline-block";
+}
