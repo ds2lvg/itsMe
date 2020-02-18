@@ -58,7 +58,7 @@ var langEN = {
       "tit": "Majored in Design",
       "line":[
       "My knowledge of computer be less than that of a major.",
-      "but I had taken several UI/UX classes and try to improve UI/UX and to design more readable code.",
+      "but I had taken several classes about UI/UX.<br />so try to improve UI/UX and to design more readable and solid code.",
       '<a href="javascript: showWac()">Web Accessibility</a><span> / </span><a href="javascript: showUiUx()">UI/UX</a>',
     ]},
   ],

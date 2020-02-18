@@ -2,7 +2,7 @@ var langKR = {
   "type": "KR",
   "nav": ["소개", "기술", "포트폴리오", "EN"],
   "introduce": {
-    "cmdTit": "제 소개 타이핑 쳐서 보여드릴께요.",
+    "cmdTit": "김종민을 소개합니다.",
     "cmd": ["이름", "관심사", "취미", "공부"],
     "title": "IT 인생 순서도",
     "flow": [
@@ -55,7 +55,7 @@ var langKR = {
       "tit": "디자인 전공자",
       "line":[
       "컴퓨터 공학 전공자보다 전공 지식은 부족할수 있습니다.",
-      "대신 저는 UI/UX 관련 수업들을 이수해서 더나은 UI/UX 를 추구하며, 코드 작성 시 가독성 좋게 디자인 하려 노력합니다.",
+      "대신 저는 UI/UX 관련 수업들을 이수해서 더나은 UI/UX 를 추구하며, 코드 작성시 설계(Design)에 신경 씁니다.",
       '<a href="javascript: showWac()">웹접근성</a><span> / </span><a href="javascript: showUiUx()">UI&UX</a>',
     ]},
   ],

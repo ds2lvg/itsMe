@@ -248,7 +248,11 @@ a {
 
 @media screen and (max-width: 420px) {
   .mob_show {
-    display: block; } }
+    display: block; }
+  .container .code_tag {
+    font-size: 18px; }
+  .container .top_menu ul li {
+    margin-left: 15px; } }
 
 .cmd_sec {
   position: relative;
