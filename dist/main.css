@@ -401,7 +401,18 @@ a {
         background-position-y: -210px; }
       .myinfo_sec .df > ul li.document {
         background-position-y: -280px; }
-      .myinfo_sec .df > ul li::after {
+        .myinfo_sec .df > ul li.document:before {
+          display: block;
+          content: '';
+          clear: both;
+          position: absolute;
+          top: -4px;
+          left: -4px;
+          width: 20px;
+          height: 20px;
+          background: url(../img/link.png) 50% 50% no-repeat;
+          background-size: contain; }
+      .myinfo_sec .df > ul li:after {
         display: block;
         content: '';
         clear: both;

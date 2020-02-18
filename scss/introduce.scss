@@ -195,8 +195,20 @@ $sec_study:$sec_hobby+$leng_study/15;
 				}
 				&.document{
 					background-position-y: -280px;
+					&:before{
+						display: block;
+						content: '';
+						clear: both;
+						position: absolute;
+						top: -4px;
+						left: -4px;
+						width: 20px;
+						height: 20px;
+						background:url(../img/link.png) 50% 50% no-repeat;
+						background-size: contain;
+					}
 				}
-				&::after{
+				&:after{
 					display: block;
 					content: '';
 					clear: both;
