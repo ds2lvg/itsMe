@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(){
   
   // 오프닝 삭제후 본격적인 화면 로딩
   function actAfterOpening(){
-    if(intro) intro.parentNode.removeChild(intro);
+    if(intro["parentNode"]) intro.parentNode.removeChild(intro);
     container.style.display="block";
   }
 
@@ -45,27 +45,58 @@ document.addEventListener("DOMContentLoaded", function(){
       case "portfiolio":
         return toggleSection(e.target.id);
       case "VTRIMG":
-        return document.querySelector('.outer_dim').style.display="none";  
+        return document.querySelectorAll('.outer_dim').forEach(v => v.style.display="none");
       default:
         break;
     }
     switch (e.target.className) {
       case "img_vtr":
       case "img_kth":
+      case "img_wac":
+      case "img_uiux":
       case "outer_dim":
-        return document.querySelector('.outer_dim').style.display="none";
+        return document.querySelectorAll('.outer_dim').forEach(v => v.style.display="none");
       default:
         break;
     }
   });
 });
+function showtargetImg(obj) {
+  var parent = document.querySelector(obj.parent);
+  parent.querySelector(".outer_dim").style.display="block";
+  parent.querySelector(".outer_dim " + obj.img1).style.display="none";
+  parent.querySelector(".outer_dim " + obj.img2).style.display="inline-block";
+
+}
 function showVTR() {
-  document.querySelector('.outer_dim').style.display="block";
-  document.querySelector('.outer_dim .img_kth').style.display="none";
-  document.querySelector('.outer_dim .img_vtr').style.display="inline-block";
+  var obj = {
+    parent: '.myinfo_sec',
+    img1: '.img_kth',
+    img2: '.img_vtr',
+  }
+  showtargetImg(obj);
 }
 function showKTH() {
-  document.querySelector('.outer_dim').style.display="block";
-  document.querySelector('.outer_dim .img_vtr').style.display="none";
-  document.querySelector('.outer_dim .img_kth').style.display="inline-block";
+  var obj = {
+    parent: '.myinfo_sec',
+    img1: '.img_vtr',
+    img2: '.img_kth',
+  }
+  showtargetImg(obj);
+}
+function showWac() {
+  var obj = {
+    parent: '.skill_sec',
+    img1: '.img_uiux',
+    img2: '.img_wac',
+  }
+  showtargetImg(obj);
+}
+function showUiUx() {
+  var obj = {
+    parent: '.skill_sec',
+    img1: '.img_wac',
+    img2: '.img_uiux',
+  }
+  showtargetImg(obj);
 }

@@ -225,6 +225,23 @@ a {
       border-radius: 50%;
       font-size: 14px; }
 
+.outer_dim {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 1; }
+  .outer_dim .modal_img {
+    z-index: 2;
+    cursor: pointer; }
+    .outer_dim .modal_img img {
+      display: none;
+      max-width: 100%; }
+
 .mob_show {
   display: none; }
 
@@ -234,6 +251,7 @@ a {
 
 .cmd_sec {
   margin-top: 50px;
+  margin-bottom: 200px;
   overflow-x: scroll;
   position: relative;
   background-color: #000000;
@@ -309,7 +327,7 @@ a {
       font-size: 12px; } }
 
 .myinfo_sec h2 {
-  margin: 60px 0 20px 50px;
+  margin: 60px 0 30px 50px;
   font-family: 'Open Sans', sans-serif; }
 
 .myinfo_sec .df {
@@ -366,7 +384,8 @@ a {
       text-align: center;
       background-image: url(../img/bg_flow_chart.png);
       background-size: 125px auto;
-      color: #ffffff;
+      color: #000;
+      font-weight: bold;
       font-size: 14px; }
       .myinfo_sec .df > ul li.start_end {
         background-position-y: 0px; }
@@ -405,23 +424,6 @@ a {
       line-height: initial; }
       .myinfo_sec .df > ul .line_3 div {
         padding-top: 5px; }
-
-.myinfo_sec .outer_dim {
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  top: 0;
-  left: 0;
-  text-align: center;
-  z-index: 1; }
-  .myinfo_sec .outer_dim .modal_img {
-    z-index: 2;
-    cursor: pointer; }
-    .myinfo_sec .outer_dim .modal_img img {
-      display: none;
-      max-width: 100%; }
 
 @media screen and (max-width: 420px) {
   .myinfo_sec h2 {
@@ -496,7 +498,7 @@ a {
   padding: 50px;
   background: rgba(238, 238, 238, 0.75); }
   .skill_sec h2 {
-    margin: 60px 0 20px 0;
+    margin: 60px 0 30px 0;
     font-family: 'Open Sans', sans-serif; }
   .skill_sec ul.web, .skill_sec ul.etc {
     display: flex;
@@ -577,9 +579,11 @@ a {
       text-align: center; }
       .skill_sec ul.etc li.code_style .ico_sec * {
         font-size: 40px; }
-  .skill_sec ul.etc li:nth-child(4) {
-    background-color: transparent;
-    visibility: hidden; }
+  .skill_sec ul.etc li.ui_ux {
+    background-color: #000; }
+    .skill_sec ul.etc li.ui_ux .ico_sec {
+      line-height: 100px;
+      text-align: center; }
 
 @media screen and (max-width: 420px) {
   .skill_sec ul.web li .txt_sec, .skill_sec ul.etc li .txt_sec {

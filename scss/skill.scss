@@ -2,7 +2,7 @@
   padding: 50px;
   background: rgba(238, 238, 238, 0.75);
   h2{
-    margin: 60px 0 20px 0;
+    margin: 60px 0 30px 0;
     font-family: 'Open Sans', sans-serif;
   }
   ul.web{
@@ -103,9 +103,12 @@
           }
         }
       }
-      &:nth-child(4){
-        background-color: transparent;
-        visibility: hidden;
+      &.ui_ux{
+        background-color: #000;
+        .ico_sec{
+          line-height: 100px;
+          text-align: center;
+        }
       }
     }
   }
