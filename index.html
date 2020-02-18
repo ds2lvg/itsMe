@@ -14,6 +14,11 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
   <link href="./dist/main.css" rel="stylesheet">
+  <script src="./js/EN.js"></script>
+  <script src="./js/KR.js"></script>
+  <script>
+    var lang = langEN;
+  </script>
 </head>
 <body>
   <article class="intro_wrap">
@@ -39,15 +44,17 @@
         <li id="introduce">Introduce</li>
         <li id="skill">Skill</li>
         <li id="portfiolio">Portfiolio</li>
+        <li id="lang">한글</li>
       </ul>
     </nav>
     <section class="introduce_sec">
       <article class="cmd_sec">
+        <div class="cmd_top">Allow me reintroduce myself</div>
         <p>
           JongminSoft Portfolio [Version 1.0.1]<br/>
           (c) 2020 JongminSoft Corporation. All rights reserved.
         </p>
-        <ul>
+        <ul id="cmdTitle">
           <li>
             <div class="ch">Name</div>
             <div class="cd">Jongmin Kim</div>
@@ -344,7 +351,7 @@
           <article class="hover_sec">
             <h1>Improve thebook UI</h1>
             <p>
-              It can remove google advertisement of site.
+              It can remove google advertisement of site.<br />
               and improve UI of the site(https://thebook.io)
             </p>         
           </article>

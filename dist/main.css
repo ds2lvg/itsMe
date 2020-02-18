@@ -64,6 +64,7 @@ a {
     z-index: 10;
     position: absolute;
     right: 0;
+    font-size: 14px;
     background: none;
     border: none;
     color: #ffffff;
@@ -250,6 +251,7 @@ a {
     display: block; } }
 
 .cmd_sec {
+  position: relative;
   margin-top: 50px;
   margin-bottom: 200px;
   overflow-x: scroll;
@@ -259,7 +261,7 @@ a {
   padding: 40px;
   border-radius: 8px;
   font: bold 100% Consolas, Monaco, monospace; }
-  .cmd_sec:before {
+  .cmd_sec .cmd_top {
     position: absolute;
     top: 0;
     left: 0;
@@ -267,9 +269,6 @@ a {
     height: 20px;
     background-color: #828282;
     border-radius: 6px 6px 0 0;
-    display: block;
-    content: 'Allow me reintroduce myself';
-    clear: both;
     box-sizing: border-box;
     padding-left: 40px; }
   .cmd_sec > p {

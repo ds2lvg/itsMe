@@ -1,9 +1,10 @@
 $square_shadow: 0px 3px 1px -6px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 .cmd_sec {
+	position: relative;
 	margin-top: 50px;
 	margin-bottom: 200px;
 	overflow-x: scroll;
-	&:before{
+	.cmd_top{
 		position: absolute; 
 		top: 0; 
 		left: 0;
@@ -11,9 +12,6 @@ $square_shadow: 0px 3px 1px -6px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 
 		height: 20px; 
 		background-color: #828282;
 		border-radius: 6px 6px 0 0;
-		display: block;
-		content: 'Allow me reintroduce myself';
-		clear: both;
 		box-sizing: border-box;
 		padding-left: 40px;
 	}

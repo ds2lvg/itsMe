@@ -73,7 +73,9 @@ document.addEventListener("DOMContentLoaded", function(){
       case "portfiolio":
         return toggleSection(e.target.id);
       case "VTRIMG":
-        return document.querySelectorAll('.outer_dim').forEach(v => v.style.display="none");
+        return document.querySelectorAll('.outer_dim').forEach(function(v){ v.style.display="none"});
+      case "lang":
+        return changeLanguage(lang);
       default:
         break;
     }
@@ -83,12 +85,13 @@ document.addEventListener("DOMContentLoaded", function(){
       case "img_wac":
       case "img_uiux":
       case "outer_dim":
-        return document.querySelectorAll('.outer_dim').forEach(v => v.style.display="none");
+        return document.querySelectorAll('.outer_dim').forEach(function(v){ v.style.display="none"});
       default:
         break;
     }
   });
 });
+
 function showtargetImg(obj) {
   var parent = document.querySelector(obj.parent);
   parent.querySelector(".outer_dim").style.display="block";
@@ -127,4 +130,51 @@ function showUiUx() {
     img2: '.img_uiux',
   }
   showtargetImg(obj);
+}
+
+function changeLanguage() {
+  var navText = document.querySelectorAll('nav.top_menu > ul > li');
+  if(lang.type === "KR") {
+    lang = langEN;
+  } else {
+    lang = langKR;
+  }
+  navText.forEach(function(v, i){ v.innerText=lang.nav[i]});
+  
+  // CMD
+  document.querySelector('.cmd_sec .cmd_top').innerText=lang.introduce.cmdTit;
+  document.querySelectorAll('#cmdTitle .ch').forEach(function(v, i){ v.innerText=lang.introduce.cmd[i]});
+  // IT Life Flow Chart
+  document.querySelector('#flowChart h2').innerText=lang.introduce.title;
+  document.querySelectorAll('#flowChart li').forEach(function(v, i){ 
+    if(v.childElementCount === 0){
+      v.innerText=lang.introduce.flow[i];
+    } else{
+      if(v.firstElementChild.tagName === "A"){
+        v.firstElementChild.innerText=lang.introduce.flow[i];
+      } else if(v.firstElementChild.tagName === "DIV") {
+        v.firstElementChild.innerText=lang.introduce.flow[i];
+      }
+    }  
+  });
+  // Skill
+  // Web
+  document.querySelectorAll('.skill_sec .web dl').forEach(function(v, i){ 
+    v.querySelector('dt').innerText=lang.skillWeb[i].tit;
+    v.querySelectorAll('dd').forEach(function(_v, _i){ 
+      _v.innerHTML=lang.skillWeb[i].line[_i];
+    });
+  });
+  // ETC
+  document.querySelectorAll('.skill_sec .etc dl').forEach(function(v, i){ 
+    v.querySelector('dt').innerText=lang.skillETC[i].tit;
+    v.querySelectorAll('dd').forEach(function(_v, _i){ 
+      _v.innerHTML=lang.skillETC[i].line[_i];
+    });
+  });
+  // Portfiolio
+  document.querySelectorAll('.portfiolio_sec .flat_box li').forEach(function(v, i){ 
+    v.querySelector('.hover_sec h1').innerText=lang.portfiolio[i].tit;
+    v.querySelector('.hover_sec p').innerText=lang.portfiolio[i].txt;
+  });
 }
