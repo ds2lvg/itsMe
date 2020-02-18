@@ -1,15 +1,42 @@
+var clickCnt = 0;
 document.addEventListener("DOMContentLoaded", function(){
   var container = document.querySelector('.container');
   var intro = document.querySelector('.intro_wrap');
-  
+  var flowChart = document.querySelector('#flowChart');
+
+  function fadeInAndScroll() {
+    flowChart.style.opacity="1";
+    var cnt = 0;
+    var lastY = flowChart.offsetTop;
+
+    function repeat() {
+      cnt += 20;
+      window.scrollTo(0, cnt);
+      var moveId = requestAnimationFrame(repeat);
+      console.log("aaa")
+      if(lastY <= cnt) {
+        cancelAnimationFrame(moveId);
+        return;
+      }
+    }
+
+    repeat();
+  }
+
   // 오프닝 삭제후 본격적인 화면 로딩
   function actAfterOpening(){
     if(intro["parentNode"]) intro.parentNode.removeChild(intro);
+
     container.style.display="block";
+    console.log("bbb");
+
+    setTimeout(function() {
+      fadeInAndScroll();
+    }, 9000);
   }
 
   setTimeout(function() {
-    actAfterOpening();
+    if(clickCnt===0)  actAfterOpening() // 스킵 클릭 안한 경우
   }, 6000);
 
   // 테스트할때 오프닝 안뜨게 하려고 만들어놓은 소스
@@ -39,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function(){
     console.log(e.target.id, e.target.className)
     switch (e.target.id) {
       case "skip":
+        clickCnt++;
         return actAfterOpening();
       case "introduce":
       case "skill":

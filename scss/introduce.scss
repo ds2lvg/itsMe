@@ -101,7 +101,9 @@ $sec_study:$sec_hobby+$leng_study/15;
 		li{font-size: 12px;}
 	}
 }
-
+#flowChart {
+	opacity: 0;
+}
 .myinfo_sec{
 	h2{ 
 		margin: 60px 0 30px 50px;
@@ -111,6 +113,7 @@ $sec_study:$sec_hobby+$leng_study/15;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		transition: all 1.5s;
 		.arrow_sec{
 			position: relative;
 			margin: 28px 0;
