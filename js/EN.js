@@ -16,7 +16,12 @@ var langEN = {
     {
       "tit": "React project",
       "line":[
-      "Product: 1th", "npm library", "Experience: Redux saga, thunk, next.js, antD",
+      "Product: 4th",
+      "Wemix Wallet App(RN)",
+      "Web Auth(Login Module)",
+      "Admin Page", 
+      "npm library", 
+      "Experience: Redux saga, React Native(RN), next.js",
     ]},
     {
       "tit": "nodeJs project",

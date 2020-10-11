@@ -1,6 +1,6 @@
 var langKR = {
   "type": "KR",
-  "nav": ["소개", "기술", "포트폴리오", "EN"],
+  "nav": ["소개", "기술", "개인 포폴", "EN"],
   "introduce": {
     "cmdTit": "김종민을 소개합니다.",
     "cmd": ["이름", "관심사", "취미", "공부"],
@@ -16,7 +16,12 @@ var langKR = {
     {
       "tit": "리액트 경험",
       "line":[
-      "프로젝트: 1개", "npm 라이브러리", "사용경험: Redux saga, thunk, next.js, antD",
+      "프로젝트: 4개",
+      "Wemix Wallet App(RN)",
+      "Web Auth(로그인 모듈)",
+      "관리자 페이지", 
+      "npm 라이브러리", 
+      "사용경험:  Redux saga, React Native(RN), next.js",
     ]},
     {
       "tit": "노드JS 경험",
