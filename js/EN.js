@@ -9,7 +9,7 @@ var langEN = {
       "Start IT Life", "UI/UX Academy", "Web Agency", "Statistical map of collective energy", "Office relocation",
       "Web Agency Temporary position", "CJ 4DX", "Contract expiration",
       "Java developer Academy", "SI", "KTH Content distribution", "Retired",
-      "Startup", "VTR(Virture Trading Room)", "To get laid off", "Study React", "Job hunting",
+      "Startup", "VTR(Virture Trading Room)", "To get laid off", "Study More", "Wemade Tree",
     ],
    },
    "skillWeb":[
@@ -21,7 +21,7 @@ var langEN = {
       "Web Auth(Login Module)",
       "Admin Page", 
       "npm library", 
-      "Experience: Redux saga, React Native(RN), next.js",
+      "Experience: Hooks, Redux, React Native(RN)",
     ]},
     {
       "tit": "nodeJs project",

@@ -1,6 +1,6 @@
 var langKR = {
   "type": "KR",
-  "nav": ["소개", "기술", "개인 포폴", "EN"],
+  "nav": ["소개", "기술", "포트폴리오", "EN"],
   "introduce": {
     "cmdTit": "김종민을 소개합니다.",
     "cmd": ["이름", "관심사", "취미", "공부"],
@@ -21,7 +21,7 @@ var langKR = {
       "Web Auth(로그인 모듈)",
       "관리자 페이지", 
       "npm 라이브러리", 
-      "사용경험:  Redux saga, React Native(RN), next.js",
+      "사용경험: Hooks, Redux, React Native(RN)",
     ]},
     {
       "tit": "노드JS 경험",
@@ -87,7 +87,7 @@ var langKR = {
     },
     {
       "tit": "웹게임(작업예정)",
-      "txt": "슈팅게임, 러닝게임등 \n다양한 게임이 되는 게임을 구상중에 있습니다.",
+      "txt": "슈팅게임, 러닝게임등 \n다양한 게임이 되는 웹앱을 준비중에 있습니다.",
     },
   ]
 }
