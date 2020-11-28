@@ -17,11 +17,11 @@ var langEN = {
       "tit": "React project",
       "line":[
       "Product: 4th",
-      "Wemix Wallet App(RN)",
+      "Wemix Wallet App",
       "Web Auth(Login Module)",
       "Admin Page", 
       "npm library", 
-      "Experience: Hooks, Redux, React Native(RN)",
+      "Experience: Hooks, Redux, React Native",
     ]},
     {
       "tit": "nodeJs project",
@@ -77,11 +77,11 @@ var langEN = {
       "txt": "Click the card and seek a pair of numbers.\nWhen finish a game, MY server collect user's record and display a best.<br>",
     },
     {
-      "tit": "Check font rednering",
-      "txt": "I made it for web designer by vanilla JS.\nIt can check font rendering on PC or Mobile.",
+      "tit": "Wemix Wallet",
+      "txt": "This app supports both IOS and Android using React Native, and reflect real-time transactions in Game Token Exchange by using WebSocket.",
     },
     {
-      "tit": "I'm working on.",
+      "tit": "IT Books",
       "txt": "Express.js, Sequelize, JWT\nNext.js, Redux-saga, axios",
     },
     {

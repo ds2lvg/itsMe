@@ -17,11 +17,11 @@ var langKR = {
       "tit": "리액트 경험",
       "line":[
       "프로젝트: 4개",
-      "Wemix Wallet App(RN)",
+      "Wemix Wallet App",
       "Web Auth(로그인 모듈)",
       "관리자 페이지", 
       "npm 라이브러리", 
-      "사용경험: Hooks, Redux, React Native(RN)",
+      "사용경험: Hooks, Redux, React Native",
     ]},
     {
       "tit": "노드JS 경험",
@@ -74,11 +74,11 @@ var langKR = {
       "txt": "클릭해서 한쌍의 카드를 맞추는 게임입니다.\n 게임 클리어하면 기록할 수 있고 상단에 최고기록이 표시됩니다.",
     },
     {
-      "tit": "폰트 프리뷰",
-      "txt": "같이 일하는 웹디자이너를 위해서 피씨와 모바일에서 폰트 렌더링을 확인하는 웹앱을 만든적이 있습니다. 좀 더 기능을 추가해서 리액트 버젼으로 만들었습니다.",
+      "tit": "위믹스 지갑앱",
+      "txt": "이 앱은 리액트 네이티브를 이용해 IOS와 안드로이드를 모두 지원 가능하며, 게임 토큰 거래소에서는 웹소켓으로 실시간 거래내역을 반영합니다.",
     },
     {
-      "tit": "IT도서몰(작업중)",
+      "tit": "IT도서몰",
       "txt": "Express.js, Sequelize, JWT \nNext.js, Redux-saga, axios",
     },
     {
