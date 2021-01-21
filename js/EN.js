@@ -56,8 +56,7 @@ var langEN = {
     {
       "tit": "Coding Life",
       "line":[
-      "If you want to know about me, visit my blog.",
-      '<a href="https://likejirak.tistory.com/" target="_blank">Go blog!</a>',
+      "Activities: Programming Books Beta Leaders & Reviewers.",
     ]},
     {
       "tit": "Majored in Design",

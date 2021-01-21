@@ -51,10 +51,9 @@ var langKR = {
       '<a href="https://www.youtube.com/watch?v=uvS52dGMlf4&amp;t=207s" target="_blank">깃강의 촬영</a>', '<a href="https://github.com/ds2lvg/" target="_blank">github 저장소</a>', "사용경험 : SVN, git, 깃헙, 깃랩)",
     ]},
     {
-      "tit": "개발 블로그 운영",
+      "tit": "개발 관련 취미",
       "line":[
-      "공부한 내용, 개발서적 리뷰등 개발관련 포스팅",
-      '<a href="https://likejirak.tistory.com/" target="_blank">티스토리로 이동</a>'
+      "활동: 프로그래밍책 베타리더&리뷰어",
     ]},
     {
       "tit": "디자인 전공자",
