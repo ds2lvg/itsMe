@@ -57,6 +57,7 @@ var langEN = {
       "tit": "Coding Life",
       "line":[
       "Activities: Programming Books Beta Leaders & Reviewers.",
+      ""
     ]},
     {
       "tit": "Majored in Design",
