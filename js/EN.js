@@ -16,7 +16,7 @@ var langEN = {
     {
       "tit": "React project",
       "line":[
-      "Product: 4th",
+      "Product: 6h",
       "Wemix Wallet App",
       "Web Auth(Login Module)",
       "Admin Page", 
@@ -26,7 +26,7 @@ var langEN = {
     {
       "tit": "nodeJs project",
       "line":[
-      "Product: 2th", "marketMACH/VTR amdin", "Experience: express, mongoDB, ejs, socketIO",
+      "Product: 3th", "marketMACH/VTR amdin", "Experience: express, mongoDB, ejs, socketIO",
     ]},
     {
       "tit": "html/css/js project",
