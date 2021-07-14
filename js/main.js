@@ -81,10 +81,7 @@ document.addEventListener("DOMContentLoaded", function(){
         break;
     }
     switch (e.target.className) {
-      case "img_vtr":
-      case "img_kth":
-      case "img_wac":
-      case "img_uiux":
+      case "modal_img":
       case "outer_dim":
         return arrIE.call(document.querySelectorAll('.outer_dim')).forEach(function(v){ v.style.display="none"});
       default:
@@ -118,7 +115,7 @@ function showKTH() {
 }
 function showWac() {
   var obj = {
-    parent: '.skill_sec',
+    parent: '.ui_ux',
     img1: '.img_uiux',
     img2: '.img_wac',
   }
@@ -126,9 +123,17 @@ function showWac() {
 }
 function showUiUx() {
   var obj = {
-    parent: '.skill_sec',
+    parent: '.ui_ux',
     img1: '.img_wac',
     img2: '.img_uiux',
+  }
+  showtargetImg(obj);
+}
+function showBetaLeader() {
+  var obj = {
+    parent: '.code_style',
+    img1: '.img_reviewer',
+    img2: '.img_pbbl',
   }
   showtargetImg(obj);
 }

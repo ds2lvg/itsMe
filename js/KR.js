@@ -21,12 +21,12 @@ var langKR = {
       "Web Auth(로그인 모듈)",
       "관리자 페이지", 
       "npm 라이브러리", 
-      "사용경험: Hooks, Redux, React Native",
+      "사용경험: Hooks, React Native(RN), Redux Saga, WebSocket, Typescript",
     ]},
     {
       "tit": "노드JS 경험",
       "line":[
-      "프로젝트: 3개", "마켓마하, VTR, 관리자", "사용경험: express, mongoDB, ejs, socketIO",
+      "프로젝트: 3개", "마켓마하", "채팅기반거래시스템", "관리자 페이지", "사용경험: express, mongoDB, ejs, socketIO",
     ]},
     {
       "tit": "마크업&AJAX 경험",
@@ -36,7 +36,7 @@ var langKR = {
     {
       "tit": "자바/스프링 경험",
       "line":[
-      "프로젝트: 2개", "KTH 유통관리 시스템, 회사 반응형웹", "사용경험: spring, boot, mybatis, thymeleaf",
+      "프로젝트: 2개", "KTH 유통관리 시스템", "회사 반응형웹", "사용경험: spring, boot, mybatis, thymeleaf",
     ]},
   ],
   "skillETC":[
@@ -53,8 +53,8 @@ var langKR = {
     {
       "tit": "개발 관련 취미",
       "line":[
-      "활동: 프로그래밍책 베타리더&리뷰어",
-      "",
+        '<a href="javascript: showBetaLeader()">프로그래밍책 베타 리더</a>',
+        '<a href="https://jpub.tistory.com/1162?category=212080"target="_blank">프로그래밍책 리뷰어</a>',
     ]},
     {
       "tit": "디자인 전공자",

@@ -21,12 +21,12 @@ var langEN = {
       "Web Auth(Login Module)",
       "Admin Page", 
       "npm library", 
-      "Experience: Hooks, Redux, React Native",
+      "Experience: Hooks, React Native(RN), Redux Saga, WebSocket, Typescript",
     ]},
     {
       "tit": "nodeJs project",
       "line":[
-      "Product: 3th", "marketMACH/VTR amdin", "Experience: express, mongoDB, ejs, socketIO",
+      "Product: 3th", "marketMACH", "Virture Trading Room","Admin Page", "Experience: express, mongoDB, ejs, socketIO",
     ]},
     {
       "tit": "html/css/js project",
@@ -36,7 +36,7 @@ var langEN = {
     {
       "tit": "java&spring project",
       "line":[
-      "Product: 2th", "KTH admin system company responsive web", "Experience: spring, boot, mybatis, thymeleaf",
+      "Product: 2th", "KTH admin system", "company responsive web", "Experience: spring, boot, mybatis, thymeleaf",
     ]},
   ],
   "skillETC":[
@@ -56,8 +56,8 @@ var langEN = {
     {
       "tit": "Coding Life",
       "line":[
-      "Activities: Programming Books Beta Leaders & Reviewers.",
-      ""
+      '<a href="javascript: showBetaLeader()">Programming Books Beta Leader</a>',
+      '<a href="https://jpub.tistory.com/1162?category=212080"target="_blank">Reviewers</a>',
     ]},
     {
       "tit": "Majored in Design",
